@@ -1,12 +1,16 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import AuthLayout from '../../components/layout/AuthLayout';
 import Button from '../../components/ui/Button';
+import useAuthStore from '../../stores/useAuthStore';
 
 const TwoFactor = () => {
   const { t } = useTranslation();
+  const navigate = useNavigate();
+  const { login } = useAuthStore();
   const [code, setCode] = useState(['', '', '', '', '', '']);
+  const [loading, setLoading] = useState(false);
 
   const handleCodeChange = (index, value) => {
     if (value.length <= 1) {
@@ -51,11 +55,30 @@ const TwoFactor = () => {
         </div>
 
         <div className="space-y-4">
-          <Link to="/dashboard">
-            <Button className="w-full">
-              {t('auth.verifyContinue')}
-            </Button>
-          </Link>
+          <Button 
+            className="w-full" 
+            loading={loading}
+            onClick={async () => {
+              setLoading(true);
+              // Simulate verification
+              await new Promise(resolve => setTimeout(resolve, 1000));
+              
+              // Mock successful login
+              const userData = {
+                id: 1,
+                name: 'John Doe',
+                email: 'user@example.com',
+                avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80'
+              };
+              const token = 'mock-jwt-token';
+              
+              login(userData, token);
+              navigate('/dashboard', { replace: true });
+              setLoading(false);
+            }}
+          >
+            {t('auth.verifyContinue')}
+          </Button>
           
           <div className="text-center">
             <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">

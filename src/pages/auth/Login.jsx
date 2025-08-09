@@ -29,10 +29,30 @@ const Login = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Navigate to two-factor for demo
-    navigate('/auth/two-factor');
+    setLoading(true);
+
+    try {
+      // Simulate API call
+      await new Promise(resolve => setTimeout(resolve, 1000));
+      
+      // Mock successful login
+      const userData = {
+        id: 1,
+        name: 'John Doe',
+        email: formData.email,
+        avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80'
+      };
+      const token = 'mock-jwt-token';
+      
+      login(userData, token);
+      navigate(from, { replace: true });
+    } catch (error) {
+      console.error('Login failed');
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
