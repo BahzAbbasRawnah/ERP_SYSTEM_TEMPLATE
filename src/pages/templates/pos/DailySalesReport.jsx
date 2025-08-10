@@ -40,7 +40,7 @@ const DailySalesReport = ({ organizationData = {}, dailyData = {} }) => {
   const productSales = [
     { product: 'قهوة عربية', quantity: 12, unitPrice: 25.50, total: 306.00 },
     { product: 'كابتشينو', quantity: 8, unitPrice: 30.00, total: 240.00 },
-    { product: 'شاي أحمر', quantity: 15, quantity: 18.00, total: 270.00 },
+    { product: 'شاي أحمر', quantity: 15, unitPrice: 18.00, total: 270.00 },
     { product: 'كنافة', quantity: 6, unitPrice: 45.00, total: 270.00 },
     { product: 'عصير برتقال', quantity: 10, unitPrice: 20.00, total: 200.00 }
   ];

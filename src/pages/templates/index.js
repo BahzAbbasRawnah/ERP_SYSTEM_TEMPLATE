@@ -21,16 +21,16 @@ export { default as EmployeeContract } from './hr/EmployeeContract';
 export { default as EndOfServiceReport } from './hr/EndOfServiceReport';
 
 // Inventory Templates
-export { default as StockSummaryReport } from './inventory/StockSummaryReport';
-export { default as StockMovementReport } from './inventory/StockMovementReport';
-export { default as GoodsReceivedNote } from './inventory/GoodsReceivedNote';
-export { default as DeliveryNote } from './inventory/DeliveryNote';
-export { default as StockAdjustmentForm } from './inventory/StockAdjustmentForm';
-export { default as StockTransferReport } from './inventory/StockTransferReport';
-export { default as ReorderLevelReport } from './inventory/ReorderLevelReport';
-export { default as InventoryValuationReport } from './inventory/InventoryValuationReport';
-export { default as ExpiryDateReport } from './inventory/ExpiryDateReport';
-export { default as DamagedGoodsReport } from './inventory/DamagedGoodsReport';
+export { default as StockSummaryReport } from './Inventory/StockSummaryReport';
+export { default as StockMovementReport } from './Inventory/StockMovementReport';
+export { default as GoodsReceivedNote } from './Inventory/GoodsReceivedNote';
+export { default as DeliveryNote } from './Inventory/DeliveryNote';
+export { default as StockAdjustmentForm } from './Inventory/StockAdjustmentForm';
+export { default as StockTransferReport } from './Inventory/StockTransferReport';
+export { default as ReorderLevelReport } from './Inventory/ReorderLevelReport';
+export { default as InventoryValuationReport } from './Inventory/InventoryValuationReport';
+export { default as ExpiryDateReport } from './Inventory/ExpiryDateReport';
+export { default as DamagedGoodsReport } from './Inventory/DamagedGoodsReport';
 
 // Project Templates
 export { default as ProjectOverviewReport } from './projects/ProjectOverviewReport';
