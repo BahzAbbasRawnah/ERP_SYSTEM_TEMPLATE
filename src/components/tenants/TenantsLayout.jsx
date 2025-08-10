@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import Header from './Header';
-import Sidebar from './Sidebar';
+import TenantsHeader from './TenantsHeader';
+import TenantsSidebar from './TenantsSidebar';
 import SettingsModal from '../ui/SettingsModal';
 import useThemeStore from '../../stores/useThemeStore';
 
-const DashboardLayout = ({ children, title, breadcrumbs = [] }) => {
+const TenantsLayout = ({ children, title, breadcrumbs = [] }) => {
   const { t } = useTranslation();
   useThemeStore();
   const [showSettings, setShowSettings] = useState(false);
@@ -15,18 +15,18 @@ const DashboardLayout = ({ children, title, breadcrumbs = [] }) => {
   
   return (
     <div className="h-screen bg-gray-50 dark:bg-gray-900 overflow-hidden">
-      <Header />
+      <TenantsHeader />
       
       {/* Horizontal Sidebar */}
       {sidebarMode === 'horizontal' && (
         <div className="fixed top-16 left-0 right-0 z-40">
-          <Sidebar />
+          <TenantsSidebar />
         </div>
       )}
       
       <div className={`flex ${sidebarMode === 'horizontal' ? 'pt-32' : 'pt-16'}`}>
         {/* Vertical Sidebar */}
-        {sidebarMode !== 'horizontal' && <Sidebar />}
+        {sidebarMode !== 'horizontal' && <TenantsSidebar />}
         
         <main className="flex-1 min-w-0" style={{ 
           height: sidebarMode === 'horizontal' ? 'calc(100vh - 8rem)' : 'calc(100vh - 4rem)' 
@@ -97,4 +97,4 @@ const DashboardLayout = ({ children, title, breadcrumbs = [] }) => {
   );
 };
 
-export default DashboardLayout;
+export default TenantsLayout;

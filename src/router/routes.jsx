@@ -58,6 +58,12 @@ import Accounts from '../pages/finance/Accounts';
 import Receipts from '../pages/finance/Receipts';
 import Transactions from '../pages/finance/Transactions';
 
+// Tenants
+import TenantsManagement from '../pages/tenants/TenantsManagement';
+import TenantsList from '../pages/tenants/TenantsList';
+import TenantDetails from '../pages/tenants/TenantDetails';
+import SubscriptionPlans from '../pages/tenants/SubscriptionPlans';
+
 // RBAC
 import RBACDashboard from '../pages/rbac/index';
 import Users from '../pages/rbac/Users';
@@ -76,6 +82,9 @@ import Logistics from '../pages/logistics/Logistics';
 import Profile from '../pages/profile/Profile';
 import Notifications from '../pages/profile/Notifications';
 import Settings from '../pages/settings/Settings';
+
+// Templates
+import TemplatesDemo from '../pages/templates/TemplatesDemo';
 
 // Showcase
 import ComponentsShowcase from '../pages/ComponentsShowcase';
@@ -290,6 +299,24 @@ export const createRoutes = (isAuthenticated) => [
     element: <ProtectedRoute><Transactions /></ProtectedRoute>
   },
 
+  // Tenants Routes
+  {
+    path: '/tenants',
+    element: <ProtectedRoute><TenantsManagement /></ProtectedRoute>
+  },
+  {
+    path: '/tenants/list',
+    element: <ProtectedRoute><TenantsList /></ProtectedRoute>
+  },
+  {
+    path: '/tenants/details/:tenantId',
+    element: <ProtectedRoute><TenantDetails /></ProtectedRoute>
+  },
+  {
+    path: '/tenants/plans',
+    element: <ProtectedRoute><SubscriptionPlans /></ProtectedRoute>
+  },
+
   // RBAC Routes
   {
     path: '/rbac',
@@ -346,6 +373,12 @@ export const createRoutes = (isAuthenticated) => [
   {
     path: '/settings',
     element: <ProtectedRoute><Settings /></ProtectedRoute>
+  },
+
+  // Templates Route
+  {
+    path: '/templates',
+    element: <ProtectedRoute><TemplatesDemo /></ProtectedRoute>
   },
 
   // Showcase Routes

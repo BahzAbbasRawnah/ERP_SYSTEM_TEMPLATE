@@ -77,7 +77,7 @@ const HorizontalSidebar = () => {
     },
     {
       title: 'System',
-      items: menuConfig.filter(item => ['rbac', 'components', 'layouts'].includes(item.id))
+      items: menuConfig.filter(item => ['tenants', 'rbac', 'templates', 'components', 'layouts'].includes(item.id))
     }
   ];
 
@@ -111,11 +111,11 @@ const HorizontalSidebar = () => {
                     <Link
                       to={item.path}
                       className={cn(
-                        'flex items-center py-2 text-sm font-medium rounded-md transition-colors whitespace-nowrap',
+                        'flex items-center p-2 text-sm font-medium rounded-md transition-colors whitespace-nowrap',
                         active ? 'bg-primary-100 text-primary-700 dark:bg-primary-900 dark:text-primary-300' : 'text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700'
                       )}
                     >
-                      <i className={`${item.icon} w-4 h-4 me-2`} />
+                      <i className={`${item.icon} w-4 h-4 mx-1`} />
                       {t(item.title)}
                     </Link>
                   )}
@@ -236,7 +236,7 @@ const SlimSidebar = () => {
     },
     {
       title: 'System',
-      items: menuConfig.filter(item => ['rbac', 'components', 'layouts'].includes(item.id))
+      items: menuConfig.filter(item => ['tenants', 'rbac', 'templates', 'components', 'layouts'].includes(item.id))
     }
   ];
 
@@ -426,7 +426,7 @@ const StaticSidebar = () => {
     },
     {
       title: 'System',
-      items: menuConfig.filter(item => ['rbac', 'components', 'layouts'].includes(item.id))
+      items: menuConfig.filter(item => ['tenants', 'rbac', 'templates', 'components', 'layouts'].includes(item.id))
     }
   ];
 

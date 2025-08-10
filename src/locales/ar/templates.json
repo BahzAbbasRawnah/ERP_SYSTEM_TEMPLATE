@@ -1,0 +1,205 @@
+{
+  "templates": {
+    "organization": {
+      "name": "اسم المؤسسة",
+      "logo": "الشعار",
+      "address": "العنوان",
+      "phone": "الهاتف",
+      "email": "البريد الإلكتروني",
+      "website": "الموقع الإلكتروني",
+      "taxId": "الرقم الضريبي"
+    },
+    "common": {
+      "date": "التاريخ",
+      "reference": "المرجع",
+      "description": "الوصف",
+      "amount": "المبلغ",
+      "quantity": "الكمية",
+      "unitPrice": "سعر الوحدة",
+      "total": "المجموع",
+      "subtotal": "المجموع الفرعي",
+      "tax": "الضريبة",
+      "discount": "الخصم",
+      "grandTotal": "المجموع الإجمالي",
+      "signature": "التوقيع",
+      "authorizedBy": "مخول من قبل",
+      "preparedBy": "أعد من قبل",
+      "approvedBy": "وافق عليه",
+      "receivedBy": "استلم من قبل",
+      "notes": "ملاحظات",
+      "terms": "الشروط والأحكام"
+    },
+    "accounts": {
+      "totalAccountStatement": {
+        "title": "كشف الحساب الإجمالي",
+        "accountName": "اسم الحساب",
+        "accountCode": "كود الحساب",
+        "period": "الفترة",
+        "openingBalance": "الرصيد الافتتاحي",
+        "closingBalance": "الرصيد الختامي",
+        "debit": "مدين",
+        "credit": "دائن"
+      },
+      "detailedAccountStatement": {
+        "title": "كشف الحساب التفصيلي",
+        "transactionDate": "تاريخ المعاملة",
+        "particulars": "التفاصيل",
+        "voucherNo": "رقم السند",
+        "balance": "الرصيد"
+      },
+      "receiptVoucher": {
+        "title": "سند قبض",
+        "voucherNo": "رقم السند",
+        "receivedFrom": "مستلم من",
+        "paymentMode": "طريقة الدفع",
+        "chequeNo": "رقم الشيك",
+        "bankName": "اسم البنك",
+        "accountHead": "رأس الحساب"
+      },
+      "disbursementVoucher": {
+        "title": "سند صرف",
+        "voucherNo": "رقم السند",
+        "paidTo": "مدفوع إلى",
+        "paymentMode": "طريقة الدفع",
+        "chequeNo": "رقم الشيك",
+        "bankName": "اسم البنك"
+      },
+      "creditNoteVoucher": {
+        "title": "سند دائن",
+        "creditNoteNo": "رقم السند الدائن",
+        "customerName": "اسم العميل",
+        "reason": "سبب الائتمان"
+      },
+      "debitNoteVoucher": {
+        "title": "سند مدين",
+        "debitNoteNo": "رقم السند المدين",
+        "supplierName": "اسم المورد",
+        "reason": "سبب الخصم"
+      }
+    },
+    "erp": {
+      "salesInvoice": {
+        "title": "فاتورة مبيعات",
+        "invoiceNo": "رقم الفاتورة",
+        "customerName": "اسم العميل",
+        "customerAddress": "عنوان العميل",
+        "itemCode": "كود الصنف",
+        "itemName": "اسم الصنف",
+        "hsn": "HSN/SAC",
+        "rate": "السعر",
+        "cgst": "CGST",
+        "sgst": "SGST",
+        "igst": "IGST"
+      },
+      "purchaseInvoice": {
+        "title": "فاتورة مشتريات",
+        "invoiceNo": "رقم الفاتورة",
+        "supplierName": "اسم المورد",
+        "supplierAddress": "عنوان المورد",
+        "poNumber": "رقم أمر الشراء",
+        "deliveryDate": "تاريخ التسليم"
+      },
+      "priceQuote": {
+        "title": "عرض سعر",
+        "quoteNo": "رقم العرض",
+        "customerName": "اسم العميل",
+        "validUntil": "صالح حتى",
+        "deliveryTime": "وقت التسليم",
+        "paymentTerms": "شروط الدفع"
+      }
+    },
+    "hr": {
+      "title": "الموارد البشرية",
+      "employeeProfile": {
+        "title": "ملف الموظف"
+      },
+      "salarySlip": {
+        "title": "قسيمة راتب"
+      },
+      "leaveApplication": {
+        "title": "طلب إجازة"
+      },
+      "attendanceReport": {
+        "title": "تقرير الحضور"
+      },
+      "overtimeReport": {
+        "title": "تقرير العمل الإضافي"
+      },
+      "employeeContract": {
+        "title": "عقد الموظف"
+      },
+      "endOfServiceReport": {
+        "title": "تقرير نهاية الخدمة"
+      }
+    },
+    "inventory": {
+      "title": "المخزون",
+      "stockSummaryReport": {
+        "title": "تقرير ملخص المخزون"
+      },
+      "stockMovementReport": {
+        "title": "تقرير حركة المخزون"
+      },
+      "goodsReceivedNote": {
+        "title": "إشعار استلام البضائع"
+      },
+      "deliveryNote": {
+        "title": "إشعار التسليم"
+      },
+      "stockAdjustmentForm": {
+        "title": "نموذج تعديل المخزون"
+      },
+      "stockTransferReport": {
+        "title": "تقرير نقل المخزون"
+      },
+      "reorderLevelReport": {
+        "title": "تقرير حدود إعادة الطلب"
+      },
+      "inventoryValuationReport": {
+        "title": "تقرير تقييم المخزون"
+      },
+      "expiryDateReport": {
+        "title": "تقرير تواريخ الانتهاء"
+      },
+      "damagedGoodsReport": {
+        "title": "تقرير البضائع التالفة"
+      }
+    },
+    "projects": {
+      "title": "المشاريع",
+      "projectOverviewReport": {
+        "title": "تقرير نظرة عامة على المشروع"
+      },
+      "projectStatusReport": {
+        "title": "تقرير حالة المشروع"
+      },
+      "projectBudgetReport": {
+        "title": "تقرير ميزانية المشروع"
+      },
+      "projectTimelineReport": {
+        "title": "تقرير الجدول الزمني للمشروع"
+      },
+      "projectClosureReport": {
+        "title": "تقرير إغلاق المشروع"
+      }
+    },
+    "pos": {
+      "title": "نقطة البيع",
+      "salesReceipt": {
+        "title": "إيصال مبيعات"
+      },
+      "salesSummaryReport": {
+        "title": "تقرير ملخص المبيعات"
+      },
+      "dailySalesReport": {
+        "title": "تقرير المبيعات اليومية"
+      },
+      "shiftClosureReport": {
+        "title": "تقرير إغلاق الوردية"
+      },
+      "refundReceipt": {
+        "title": "إيصال استرداد"
+      }
+    }
+  }
+}

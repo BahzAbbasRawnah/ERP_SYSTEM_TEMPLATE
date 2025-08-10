@@ -1,0 +1,205 @@
+{
+  "templates": {
+    "organization": {
+      "name": "Organization Name",
+      "logo": "Logo",
+      "address": "Address",
+      "phone": "Phone",
+      "email": "Email",
+      "website": "Website",
+      "taxId": "Tax ID"
+    },
+    "common": {
+      "date": "Date",
+      "reference": "Reference",
+      "description": "Description",
+      "amount": "Amount",
+      "quantity": "Quantity",
+      "unitPrice": "Unit Price",
+      "total": "Total",
+      "subtotal": "Subtotal",
+      "tax": "Tax",
+      "discount": "Discount",
+      "grandTotal": "Grand Total",
+      "signature": "Signature",
+      "authorizedBy": "Authorized By",
+      "preparedBy": "Prepared By",
+      "approvedBy": "Approved By",
+      "receivedBy": "Received By",
+      "notes": "Notes",
+      "terms": "Terms & Conditions"
+    },
+    "accounts": {
+      "totalAccountStatement": {
+        "title": "Total Account Statement",
+        "accountName": "Account Name",
+        "accountCode": "Account Code",
+        "period": "Period",
+        "openingBalance": "Opening Balance",
+        "closingBalance": "Closing Balance",
+        "debit": "Debit",
+        "credit": "Credit"
+      },
+      "detailedAccountStatement": {
+        "title": "Detailed Account Statement",
+        "transactionDate": "Transaction Date",
+        "particulars": "Particulars",
+        "voucherNo": "Voucher No",
+        "balance": "Balance"
+      },
+      "receiptVoucher": {
+        "title": "Receipt Voucher",
+        "voucherNo": "Voucher No",
+        "receivedFrom": "Received From",
+        "paymentMode": "Payment Mode",
+        "chequeNo": "Cheque No",
+        "bankName": "Bank Name",
+        "accountHead": "Account Head"
+      },
+      "disbursementVoucher": {
+        "title": "Disbursement Voucher",
+        "voucherNo": "Voucher No",
+        "paidTo": "Paid To",
+        "paymentMode": "Payment Mode",
+        "chequeNo": "Cheque No",
+        "bankName": "Bank Name"
+      },
+      "creditNoteVoucher": {
+        "title": "Credit Note Voucher",
+        "creditNoteNo": "Credit Note No",
+        "customerName": "Customer Name",
+        "reason": "Reason for Credit"
+      },
+      "debitNoteVoucher": {
+        "title": "Debit Note Voucher",
+        "debitNoteNo": "Debit Note No",
+        "supplierName": "Supplier Name",
+        "reason": "Reason for Debit"
+      }
+    },
+    "erp": {
+      "salesInvoice": {
+        "title": "Sales Invoice",
+        "invoiceNo": "Invoice No",
+        "customerName": "Customer Name",
+        "customerAddress": "Customer Address",
+        "itemCode": "Item Code",
+        "itemName": "Item Name",
+        "hsn": "HSN/SAC",
+        "rate": "Rate",
+        "cgst": "CGST",
+        "sgst": "SGST",
+        "igst": "IGST"
+      },
+      "purchaseInvoice": {
+        "title": "Purchase Invoice",
+        "invoiceNo": "Invoice No",
+        "supplierName": "Supplier Name",
+        "supplierAddress": "Supplier Address",
+        "poNumber": "PO Number",
+        "deliveryDate": "Delivery Date"
+      },
+      "priceQuote": {
+        "title": "Price Quote",
+        "quoteNo": "Quote No",
+        "customerName": "Customer Name",
+        "validUntil": "Valid Until",
+        "deliveryTime": "Delivery Time",
+        "paymentTerms": "Payment Terms"
+      }
+    },
+    "hr": {
+      "title": "Human Resources",
+      "employeeProfile": {
+        "title": "Employee Profile"
+      },
+      "salarySlip": {
+        "title": "Salary Slip"
+      },
+      "leaveApplication": {
+        "title": "Leave Application"
+      },
+      "attendanceReport": {
+        "title": "Attendance Report"
+      },
+      "overtimeReport": {
+        "title": "Overtime Report"
+      },
+      "employeeContract": {
+        "title": "Employee Contract"
+      },
+      "endOfServiceReport": {
+        "title": "End of Service Report"
+      }
+    },
+    "inventory": {
+      "title": "Inventory",
+      "stockSummaryReport": {
+        "title": "Stock Summary Report"
+      },
+      "stockMovementReport": {
+        "title": "Stock Movement Report"
+      },
+      "goodsReceivedNote": {
+        "title": "Goods Received Note"
+      },
+      "deliveryNote": {
+        "title": "Delivery Note"
+      },
+      "stockAdjustmentForm": {
+        "title": "Stock Adjustment Form"
+      },
+      "stockTransferReport": {
+        "title": "Stock Transfer Report"
+      },
+      "reorderLevelReport": {
+        "title": "Reorder Level Report"
+      },
+      "inventoryValuationReport": {
+        "title": "Inventory Valuation Report"
+      },
+      "expiryDateReport": {
+        "title": "Expiry Date Report"
+      },
+      "damagedGoodsReport": {
+        "title": "Damaged Goods Report"
+      }
+    },
+    "projects": {
+      "title": "Projects",
+      "projectOverviewReport": {
+        "title": "Project Overview Report"
+      },
+      "projectStatusReport": {
+        "title": "Project Status Report"
+      },
+      "projectBudgetReport": {
+        "title": "Project Budget Report"
+      },
+      "projectTimelineReport": {
+        "title": "Project Timeline Report"
+      },
+      "projectClosureReport": {
+        "title": "Project Closure Report"
+      }
+    },
+    "pos": {
+      "title": "Point of Sale",
+      "salesReceipt": {
+        "title": "Sales Receipt"
+      },
+      "salesSummaryReport": {
+        "title": "Sales Summary Report"
+      },
+      "dailySalesReport": {
+        "title": "Daily Sales Report"
+      },
+      "shiftClosureReport": {
+        "title": "Shift Closure Report"
+      },
+      "refundReceipt": {
+        "title": "Refund Receipt"
+      }
+    }
+  }
+}

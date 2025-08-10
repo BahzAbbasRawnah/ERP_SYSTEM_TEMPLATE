@@ -1,0 +1,123 @@
+import { useTranslation } from 'react-i18next';
+import OrganizationHeader from '../components/OrganizationHeader';
+import ReportTitle from '../components/ReportTitle';
+import TemplateTable from '../components/TemplateTable';
+import SignatureSection from '../components/SignatureSection';
+
+const DetailedAccountStatement = ({ 
+  organizationData = {},
+  accountData = {},
+  transactions = [],
+  period = { from: '2024-01-01', to: '2024-12-31' }
+}) => {
+  const { t } = useTranslation();
+
+  const defaultAccountData = {
+    accountName: 'Accounts Receivable',
+    accountCode: 'ACC002',
+    openingBalance: 25000,
+    ...accountData
+  };
+
+  const defaultTransactions = transactions.length > 0 ? transactions : [
+    { 
+      date: '2024-01-15', 
+      particulars: 'Invoice #INV001 - ABC Company', 
+      voucherNo: 'V001',
+      debit: 15000, 
+      credit: 0,
+      balance: 40000
+    },
+    { 
+      date: '2024-01-20', 
+      particulars: 'Payment received from ABC Company', 
+      voucherNo: 'V002',
+      debit: 0, 
+      credit: 10000,
+      balance: 30000
+    },
+    { 
+      date: '2024-02-10', 
+      particulars: 'Invoice #INV002 - XYZ Ltd', 
+      voucherNo: 'V003',
+      debit: 20000, 
+      credit: 0,
+      balance: 50000
+    },
+    { 
+      date: '2024-02-15', 
+      particulars: 'Payment received from XYZ Ltd', 
+      voucherNo: 'V004',
+      debit: 0, 
+      credit: 15000,
+      balance: 35000
+    }
+  ];
+
+  const columns = [
+    { key: 'date', header: t('templates.accounts.detailedAccountStatement.transactionDate') },
+    { key: 'particulars', header: t('templates.accounts.detailedAccountStatement.particulars') },
+    { key: 'voucherNo', header: t('templates.accounts.detailedAccountStatement.voucherNo'), align: 'center' },
+    { 
+      key: 'debit', 
+      header: t('templates.accounts.totalAccountStatement.debit'),
+      align: 'right',
+      render: (value) => value > 0 ? value.toLocaleString() : '-'
+    },
+    { 
+      key: 'credit', 
+      header: t('templates.accounts.totalAccountStatement.credit'),
+      align: 'right',
+      render: (value) => value > 0 ? value.toLocaleString() : '-'
+    },
+    { 
+      key: 'balance', 
+      header: t('templates.accounts.detailedAccountStatement.balance'),
+      align: 'right',
+      render: (value) => value.toLocaleString()
+    }
+  ];
+
+  return (
+    <div className="print-wrapper">
+      <div className="template-print-container max-w-5xl mx-auto bg-white">
+        <div className="template-header">
+          <OrganizationHeader {...organizationData} />
+        </div>
+        
+        <div className="report-title-section">
+          <ReportTitle 
+            title={t('templates.accounts.detailedAccountStatement.title')}
+            titleAr="كشف الحساب التفصيلي"
+            rightSection={{
+              title: "Account Info:",
+              data: {
+                [defaultAccountData.accountName]: "",
+                ["Account Code"]: defaultAccountData.accountCode
+              }
+            }}
+            leftSection={{
+              title: "Period:",
+              data: {
+                ["From"]: period.from,
+                ["To"]: period.to,
+                ["Opening Balance"]: defaultAccountData.openingBalance.toLocaleString()
+              }
+            }}
+          />
+        </div>
+        
+        <div className="template-body">
+
+
+
+      <TemplateTable columns={columns} data={defaultTransactions} />
+
+      <SignatureSection />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default DetailedAccountStatement;

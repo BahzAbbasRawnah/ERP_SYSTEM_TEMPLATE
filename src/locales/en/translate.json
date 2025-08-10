@@ -64,6 +64,7 @@
     "inventory": "Inventory",
     "finance": "Finance",
     "hr": "Human Resources",
+    "humanResources": "Human Resources",
     "crm": "CRM",
     "projects": "Projects",
     "reports": "Reports",
@@ -96,9 +97,13 @@
     "logistics": "Logistics",
     "profile": "Profile",
     "notifications": "Notifications",
+    "templates": "Templates",
     "components": "Components",
     "layouts": "Layouts",
     "rbac": "Access Control",
+    "tenants": "Tenants",
+    "tenantsList": "Tenants List",
+    "subscriptionPlans": "Subscription Plans",
     "salesManagement": "Sales Management",
     "purchasesManagement": "Purchases Management",
     "inventoryManagement": "Inventory Management",
@@ -792,5 +797,470 @@
     "module": "Module",
     "assignedRoles": "Assigned Roles",
     "pendingAssignments": "Pending Assignments"
+  },
+  "tenants": {
+    "management": {
+      "title": "Tenants Management",
+      "subtitle": "Manage all your tenants and their subscriptions"
+    },
+    "actions": {
+      "create": "Create Tenant",
+      "edit": "Edit Tenant",
+      "delete": "Delete Tenant",
+      "settings": "Settings",
+      "viewAnalytics": "View Analytics",
+      "suspend": "Suspend",
+      "activate": "Activate"
+    },
+    "stats": {
+      "total": "Total Tenants",
+      "active": "Active Tenants",
+      "trial": "Trial Tenants",
+      "suspended": "Suspended Tenants",
+      "revenue": "Monthly Revenue",
+      "totalUsers": "Total Users",
+      "avgUsers": "Avg Users per Tenant",
+      "fromLastMonth": "from last month"
+    },
+    "list": {
+      "showing": "Showing",
+      "of": "of",
+      "tenants": "tenants"
+    },
+    "table": {
+      "tenant": "Tenant",
+      "domain": "Domain",
+      "status": "Status",
+      "plan": "Plan",
+      "users": "Users",
+      "actions": "Actions"
+    },
+    "status": {
+      "active": "Active",
+      "trial": "Trial",
+      "suspended": "Suspended",
+      "expired": "Expired"
+    },
+    "plans": {
+      "basic": "Basic",
+      "professional": "Professional",
+      "enterprise": "Enterprise",
+      "custom": "Custom",
+      "title": "Subscription Plans",
+      "subtitle": "Manage subscription plans and pricing",
+      "create": "Create Plan",
+      "comparison": "Plan Comparison",
+      "feature": "Feature",
+      "popular": "Most Popular",
+      "contactUs": "Contact Us",
+      "activeTenants": "active tenants",
+      "unlimited": "Unlimited",
+      "billing": {
+        "monthly": "Monthly",
+        "yearly": "Yearly",
+        "custom": "Custom"
+      },
+      "features": {
+        "users": "Users",
+        "storage": "Storage",
+        "support": "Support",
+        "customDomain": "Custom Domain",
+        "modules": "Modules",
+        "apiAccess": "API Access"
+      },
+      "limits": {
+        "title":"Limits",
+        "maxUsers": "Max Users",
+        "maxStorage": "Max Storage",
+        "maxApiCalls": "Max API Calls"
+      },
+      "support": {
+        "email": "Email Support",
+        "chat": "Email & Chat",
+        "phone": "24/7 Phone & Chat",
+        "dedicated": "Dedicated Account Manager"
+      },
+      "editPlan": "Edit Plan",
+      "createPlan": "Create Plan",
+      "form": {
+        "name": "Plan Name",
+        "description": "Description",
+        "price": "Price",
+        "currency": "Currency",
+        "billing": "Billing Cycle",
+        "limits": "Plan Limits",
+        "maxUsers": "Max Users",
+        "maxStorage": "Max Storage",
+        "maxApiCalls": "Max API Calls",
+        "unlimitedPlaceholder": "Leave empty for unlimited",
+        "features": "Features",
+        "support": "Support Level",
+        "customDomain": "Custom Domain Support",
+        "apiAccess": "API Access",
+        "isPopular": "Mark as Popular",
+        "modules": "Available Modules"
+      }
+    },
+    "card": {
+      "users": "Users",
+      "storage": "Storage",
+      "owner": "Owner",
+      "created": "Created",
+      "expires": "Expires",
+      "lastLogin": "Last Login"
+    },
+    "filters": {
+      "allStatuses": "All Statuses",
+      "allPlans": "All Plans"
+    },
+    "search": {
+      "placeholder": "Search tenants by name, domain, or owner..."
+    },
+    "quickFilters": {
+      "activeOnly": "Active Only",
+      "trialOnly": "Trial Only",
+      "enterpriseOnly": "Enterprise Only",
+      "clearAll": "Clear All"
+    },
+    "empty": {
+      "title": "No tenants found",
+      "description": "Try adjusting your search or filter criteria"
+    },
+    "modal": {
+      "editTitle": "Edit Tenant",
+      "createTitle": "Create New Tenant",
+      "tabs": {
+        "basic": "Basic Info",
+        "owner": "Owner Details",
+        "subscription": "Subscription",
+        "database": "Database",
+        "domain": "Domain"
+      },
+      "fields": {
+        "name": "Tenant Name",
+        "domain": "Subdomain",
+        "customDomain": "Custom Domain",
+        "customDomainHelp": "Optional: Use your own domain (e.g., erp.company.com)",
+        "status": "Status",
+        "ownerName": "Owner Name",
+        "ownerEmail": "Owner Email",
+        "ownerPhone": "Owner Phone",
+        "plan": "Subscription Plan",
+        "maxUsers": "Max Users",
+        "maxStorage": "Max Storage",
+        "autoRenewal": "Auto Renewal",
+        "databaseType": "Database Type",
+        "databaseName": "Database Name",
+        "schemaName": "Schema Name",
+        "sslEnabled": "Enable SSL"
+      },
+      "databaseTypes": {
+        "schema": "Shared Database (Schema per tenant)",
+        "database": "Separate Database per tenant"
+      }
+    },
+    "tabs": {
+      "overview": "Overview",
+      "subscription": "Subscription",
+      "domains": "Domains",
+      "users": "Users",
+      "analytics": "Analytics",
+      "billing": "Billing"
+    },
+    "info": {
+      "basicInfo": "Basic Information",
+      "name": "Name",
+      "domain": "Domain",
+      "customDomain": "Custom Domain",
+      "status": "Status",
+      "created": "Created",
+      "lastLogin": "Last Login",
+      "ownerInfo": "Owner Information",
+      "ownerName": "Owner Name",
+      "ownerEmail": "Owner Email",
+      "ownerPhone": "Owner Phone",
+      "usage": "Usage Statistics",
+      "users": "Users",
+      "storage": "Storage",
+      "database": "Database Information",
+      "databaseType": "Database Type",
+      "separateDatabase": "Separate Database",
+      "sharedDatabase": "Shared Database (Schema)",
+      "databaseName": "Database Name",
+      "schemaName": "Schema Name"
+    },
+    "subscription": {
+      "overview": "Subscription Overview",
+      "currentPlan": "Current Plan",
+      "changePlan": "Change Plan",
+      "viewBilling": "View Billing",
+      "monthlyPrice": "per month",
+      "daysLeft": "days left",
+      "autoRenewal": "Auto Renewal",
+      "details": "Subscription Details",
+      "status": "Status",
+      "startDate": "Start Date",
+      "endDate": "End Date",
+      "nextBilling": "Next Billing",
+      "paymentMethod": "Payment Method",
+      "features": "Plan Features",
+      "maxUsers": "Max Users",
+      "storage": "Storage",
+      "support": "Support",
+      "customDomain": "Custom Domain",
+      "apiAccess": "API Access",
+      "availableModules": "Available Modules",
+      "actions": "Subscription Actions",
+      "upgrade": "Upgrade Plan",
+      "extend": "Extend Subscription",
+      "suspend": "Suspend",
+      "cancel": "Cancel",
+      "statuses": {
+        "active": "Active",
+        "trial": "Trial",
+        "expired": "Expired",
+        "cancelled": "Cancelled"
+      }
+    },
+    "domains": {
+      "addNew": "Add New Domain",
+      "add": "Add Domain",
+      "addHelp": "Enter your custom domain name. Make sure to configure DNS settings.",
+      "current": "Current Domains",
+      "primary": "Primary",
+      "types": {
+        "subdomain": "Subdomain",
+        "custom": "Custom Domain"
+      },
+      "status": "Status",
+      "ssl": "SSL",
+      "added": "Added",
+      "statuses": {
+        "active": "Active",
+        "pending": "Pending",
+        "failed": "Failed"
+      },
+      "ssl": {
+        "active": "Active",
+        "pending": "Pending",
+        "failed": "Failed"
+      },
+      "makePrimary": "Make Primary",
+      "configure": "Configure",
+      "dnsConfiguration": "DNS Configuration",
+      "sslManagement": "SSL Certificate Management",
+      "sslStatus": "SSL Status",
+      "sslActions": "SSL Actions",
+      "renew": "Renew",
+      "generateCertificate": "Generate Certificate",
+      "uploadCertificate": "Upload Certificate",
+      "renewAll": "Renew All",
+      "verification": "Domain Verification",
+      "verificationRequired": "Domain Verification Required",
+      "verificationHelp": "Some domains require verification before they can be used.",
+      "verifyNow": "Verify Now"
+    },
+    "analytics": {
+      "logins": "Total Logins",
+      "apiCalls": "API Calls",
+      "storage": "Storage Used",
+      "activeUsers": "Active Users",
+      "thisMonth": "this month",
+      "average": "avg",
+      "apiUsage": "API Usage Trend",
+      "currentMonth": "Current Month",
+      "storageUsage": "Storage Usage",
+      "used": "Used",
+      "chartPlaceholder": "Chart visualization will be implemented here",
+      "moduleUsage": "Module Usage",
+      "viewDetails": "View Details",
+      "recentActivity": "Recent Activity",
+      "time": "Time",
+      "user": "User",
+      "action": "Action",
+      "ip": "IP Address"
+    },
+    "billing": {
+      "totalPaid": "Total Paid",
+      "nextBilling": "Next Billing",
+      "invoices": "Total Invoices",
+      "avgMonthly": "Avg Monthly",
+      "upcomingBilling": "Upcoming Billing",
+      "nextCharge": "Next Charge",
+      "willBeCharged": "will be charged on",
+      "paymentMethod": "Payment Method",
+      "updatePayment": "Update Payment",
+      "changePlan": "Change Plan",
+      "history": "Billing History",
+      "allTime": "All Time",
+      "thisYear": "This Year",
+      "lastYear": "Last Year",
+      "last6Months": "Last 6 Months",
+      "exportAll": "Export All",
+      "invoice": "Invoice",
+      "date": "Date",
+      "amount": "Amount",
+      "plan": "Plan",
+      "status": "Status",
+      "actions": "Actions",
+      "view": "View",
+      "download": "Download",
+      "statuses": {
+        "paid": "Paid",
+        "pending": "Pending",
+        "failed": "Failed",
+        "refunded": "Refunded"
+      },
+      "paymentMethods": "Payment Methods",
+      "addPaymentMethod": "Add Payment Method",
+      "expires": "Expires",
+      "primary": "Primary"
+    },
+    "users": {
+      "total": "Total Users",
+      "active": "Active Users",
+      "inactive": "Inactive Users",
+      "suspended": "Suspended Users",
+      "limit": "limit",
+      "management": "User Management",
+      "addUser": "Add User",
+      "searchPlaceholder": "Search users by name or email...",
+      "allRoles": "All Roles",
+      "roles": {
+        "admin": "Admin",
+        "manager": "Manager",
+        "user": "User"
+      },
+      "user": "User",
+      "role": "Role",
+      "status": "Status",
+      "lastLogin": "Last Login",
+      "actions": "Actions",
+      "statuses": {
+        "active": "Active",
+        "inactive": "Inactive",
+        "suspended": "Suspended"
+      },
+      "resetPassword": "Reset Password",
+      "suspend": "Suspend",
+      "activate": "Activate",
+      "noUsers": "No users found",
+      "noUsersDescription": "No users match your search criteria",
+      "bulkActions": "Bulk Actions",
+      "sendInvitations": "Send Invitations",
+      "bulkImport": "Bulk Import",
+      "resetAllPasswords": "Reset All Passwords",
+      "exportUsers": "Export Users"
+    }
+  },
+  "templates": {
+    "organization": {
+      "name": "Organization Name",
+      "logo": "Logo",
+      "address": "Address",
+      "phone": "Phone",
+      "email": "Email",
+      "website": "Website",
+      "taxId": "Tax ID"
+    },
+    "common": {
+      "date": "Date",
+      "reference": "Reference",
+      "description": "Description",
+      "amount": "Amount",
+      "quantity": "Quantity",
+      "unitPrice": "Unit Price",
+      "total": "Total",
+      "subtotal": "Subtotal",
+      "tax": "Tax",
+      "discount": "Discount",
+      "grandTotal": "Grand Total",
+      "signature": "Signature",
+      "authorizedBy": "Authorized By",
+      "preparedBy": "Prepared By",
+      "approvedBy": "Approved By",
+      "receivedBy": "Received By",
+      "notes": "Notes",
+      "terms": "Terms & Conditions"
+    },
+    "accounts": {
+      "totalAccountStatement": {
+        "title": "Total Account Statement",
+        "accountName": "Account Name",
+        "accountCode": "Account Code",
+        "period": "Period",
+        "openingBalance": "Opening Balance",
+        "closingBalance": "Closing Balance",
+        "debit": "Debit",
+        "credit": "Credit"
+      },
+      "detailedAccountStatement": {
+        "title": "Detailed Account Statement",
+        "transactionDate": "Transaction Date",
+        "particulars": "Particulars",
+        "voucherNo": "Voucher No",
+        "balance": "Balance"
+      },
+      "receiptVoucher": {
+        "title": "Receipt Voucher",
+        "voucherNo": "Voucher No",
+        "receivedFrom": "Received From",
+        "paymentMode": "Payment Mode",
+        "chequeNo": "Cheque No",
+        "bankName": "Bank Name",
+        "accountHead": "Account Head"
+      },
+      "disbursementVoucher": {
+        "title": "Disbursement Voucher",
+        "voucherNo": "Voucher No",
+        "paidTo": "Paid To",
+        "paymentMode": "Payment Mode",
+        "chequeNo": "Cheque No",
+        "bankName": "Bank Name"
+      },
+      "creditNoteVoucher": {
+        "title": "Credit Note Voucher",
+        "creditNoteNo": "Credit Note No",
+        "customerName": "Customer Name",
+        "reason": "Reason for Credit"
+      },
+      "debitNoteVoucher": {
+        "title": "Debit Note Voucher",
+        "debitNoteNo": "Debit Note No",
+        "supplierName": "Supplier Name",
+        "reason": "Reason for Debit"
+      }
+    },
+    "erp": {
+      "salesInvoice": {
+        "title": "Sales Invoice",
+        "invoiceNo": "Invoice No",
+        "customerName": "Customer Name",
+        "customerAddress": "Customer Address",
+        "itemCode": "Item Code",
+        "itemName": "Item Name",
+        "hsn": "HSN/SAC",
+        "rate": "Rate",
+        "cgst": "CGST",
+        "sgst": "SGST",
+        "igst": "IGST"
+      },
+      "purchaseInvoice": {
+        "title": "Purchase Invoice",
+        "invoiceNo": "Invoice No",
+        "supplierName": "Supplier Name",
+        "supplierAddress": "Supplier Address",
+        "poNumber": "PO Number",
+        "deliveryDate": "Delivery Date"
+      },
+      "priceQuote": {
+        "title": "Price Quote",
+        "quoteNo": "Quote No",
+        "customerName": "Customer Name",
+        "validUntil": "Valid Until",
+        "deliveryTime": "Delivery Time",
+        "paymentTerms": "Payment Terms"
+      }
+    }
   }
 }

@@ -1,0 +1,182 @@
+/* Print Styles for Templates */
+@media print {
+  @page {
+    margin: 0;
+    size: A4;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-size: 11pt;
+    line-height: 1.4;
+    color: #000;
+    background: white;
+    font-family: Arial, sans-serif;
+  }
+
+  /* Print Wrapper */
+  .print-wrapper {
+    padding: 1.5cm !important;
+    margin: 0 !important;
+    background: white !important;
+  }
+
+  /* Template Container */
+  .template-print-container {
+    border: 2px solid #000 !important;
+    border-radius: 8px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: white !important;
+    box-shadow: none !important;
+  }
+
+  /* Organization Header */
+  .template-header {
+    border: 2px solid #000 !important;
+    border-radius: 8px 8px 0 0 !important;
+    border-bottom: 2px solid #000 !important;
+    background: #f8f9fa !important;
+    padding: 1cm !important;
+    margin: 0 !important;
+  }
+
+  /* Report Title Section */
+  .report-title-section {
+    border-left: 2px solid #000 !important;
+    border-right: 2px solid #000 !important;
+    border-bottom: 2px solid #000 !important;
+    margin: 0 !important;
+  }
+
+  /* Template Body */
+  .template-body {
+    border-left: 2px solid #000 !important;
+    border-right: 2px solid #000 !important;
+    border-bottom: 2px solid #000 !important;
+    border-radius: 0 0 8px 8px !important;
+    padding: 1cm !important;
+    margin: 0 !important;
+  }
+
+  /* Hide UI elements */
+  .print\\:hidden,
+  nav,
+  .sidebar,
+  button:not(.print-show),
+  .card,
+  .bg-gray-50,
+  .shadow-sm {
+    display: none !important;
+  }
+
+  /* Table styles */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 2px solid #000 !important;
+  }
+
+  table th,
+  table td {
+    border: 1px solid #000 !important;
+    padding: 8px !important;
+    text-align: left;
+  }
+
+  table th {
+    background-color: #e9ecef !important;
+    font-weight: bold !important;
+  }
+
+  table tfoot td {
+    background-color: #f8f9fa !important;
+    font-weight: bold !important;
+  }
+
+  /* Signature section */
+  .signature-section {
+    margin-top: 1.5cm;
+    page-break-inside: avoid;
+  }
+
+  /* Ensure colors are preserved */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    color-adjust: exact !important;
+  }
+
+  /* Page breaks */
+  .page-break-before {
+    page-break-before: always;
+  }
+
+  .page-break-after {
+    page-break-after: always;
+  }
+
+  .page-break-inside-avoid {
+    page-break-inside: avoid;
+  }
+}
+
+/* Template specific styles */
+.template-container {
+  max-width: 210mm;
+  margin: 0 auto;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.template-header {
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.template-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+
+.template-table th,
+.template-table td {
+  border: 1px solid #d1d5db;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.template-table th {
+  background-color: #f9fafb;
+  font-weight: 600;
+}
+
+.template-footer {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.signature-line {
+  border-bottom: 1px solid #6b7280;
+  height: 4rem;
+  margin-bottom: 0.5rem;
+}
+
+/* RTL specific adjustments */
+.rtl .template-table th,
+.rtl .template-table td {
+  text-align: right;
+}
+
+.rtl .template-table th[data-align="center"],
+.rtl .template-table td[data-align="center"] {
+  text-align: center;
+}
+
+.rtl .template-table th[data-align="left"],
+.rtl .template-table td[data-align="left"] {
+  text-align: left;
+}

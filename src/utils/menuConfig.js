@@ -119,6 +119,17 @@ export const menuConfig = [
     path: '/logistics'
   },
   {
+    id: 'tenants',
+    title: 'navigation.tenants',
+    icon: 'fas fa-building',
+    path: '/tenants',
+    children: [
+      { id: 'tenants-overview', title: 'navigation.overview', path: '/tenants', icon: 'fas fa-tachometer-alt' },
+      { id: 'tenants-list', title: 'navigation.tenantsList', path: '/tenants/list', icon: 'fas fa-list' },
+      { id: 'subscription-plans', title: 'navigation.subscriptionPlans', path: '/tenants/plans', icon: 'fas fa-credit-card' }
+    ]
+  },
+  {
     id: 'rbac',
     title: 'navigation.rbac',
     icon: 'fas fa-users-cog',
@@ -130,6 +141,12 @@ export const menuConfig = [
       { id: 'rbac-permissions', title: 'navigation.permissions', path: '/rbac/permissions', icon: 'fas fa-shield-alt' },
       { id: 'rbac-assignments', title: 'navigation.assignments', path: '/rbac/assignments', icon: 'fas fa-user-check' }
     ]
+  },
+  {
+    id: 'templates',
+    title: 'navigation.templates',
+    icon: 'fas fa-file-alt',
+    path: '/templates'
   },
   {
     id: 'components',

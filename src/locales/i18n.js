@@ -5,14 +5,16 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 // Import translation files
 import enTranslations from './en/translate.json';
 import arTranslations from './ar/translate.json';
+import enTemplates from './en/templates.json';
+import arTemplates from './ar/templates.json';
 
 // Translation resources
 const resources = {
   en: {
-    translation: enTranslations
+    translation: { ...enTranslations, ...enTemplates }
   },
   ar: {
-    translation: arTranslations
+    translation: { ...arTranslations, ...arTemplates }
   }
 };
 
