@@ -65,13 +65,13 @@
         "bankName": "اسم البنك"
       },
       "creditNoteVoucher": {
-        "title": "سند دائن",
+        "title": "سند إشعار دائن",
         "creditNoteNo": "رقم السند الدائن",
         "customerName": "اسم العميل",
         "reason": "سبب الائتمان"
       },
       "debitNoteVoucher": {
-        "title": "سند مدين",
+        "title": "سند إشعار مدين",
         "debitNoteNo": "رقم السند المدين",
         "supplierName": "اسم المورد",
         "reason": "سبب الخصم"

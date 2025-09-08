@@ -13,7 +13,8 @@ export const menuConfig = [
     children: [
       { id: 'sales-overview', title: 'navigation.overview', path: '/sales', icon: 'fas fa-tachometer-alt' },
       { id: 'sales-management', title: 'navigation.salesManagement', path: '/sales/management', icon: 'fas fa-chart-bar' },
-      { id: 'orders', title: 'navigation.orders', path: '/sales/orders', icon: 'fas fa-file-invoice' }
+      { id: 'orders', title: 'navigation.orders', path: '/sales/orders', icon: 'fas fa-file-invoice' },
+      { id: 'sales-reports', title: 'التقارير', path: '/sales/reports', icon: 'fas fa-chart-bar' }
     ]
   },
   {
@@ -25,7 +26,8 @@ export const menuConfig = [
       { id: 'purchases-overview', title: 'navigation.overview', path: '/purchases', icon: 'fas fa-tachometer-alt' },
       { id: 'purchases-management', title: 'navigation.purchasesManagement', path: '/purchases/management', icon: 'fas fa-chart-bar' },
       { id: 'suppliers', title: 'navigation.suppliers', path: '/purchases/suppliers', icon: 'fas fa-truck' },
-      { id: 'contracts', title: 'navigation.contracts', path: '/purchases/contracts', icon: 'fas fa-handshake' }
+      { id: 'contracts', title: 'navigation.contracts', path: '/purchases/contracts', icon: 'fas fa-handshake' },
+      { id: 'purchases-reports', title: 'التقارير', path: '/purchases/reports', icon: 'fas fa-chart-bar' }
     ]
   },
   {
@@ -38,7 +40,8 @@ export const menuConfig = [
       { id: 'inventory-management', title: 'navigation.inventoryManagement', path: '/inventory/management', icon: 'fas fa-chart-bar' },
       { id: 'products', title: 'navigation.products', path: '/inventory/products', icon: 'fas fa-box' },
       { id: 'stores', title: 'navigation.stores', path: '/inventory/stores', icon: 'fas fa-warehouse' },
-      { id: 'transfers', title: 'navigation.transfers', path: '/inventory/transfers', icon: 'fas fa-exchange-alt' }
+      { id: 'transfers', title: 'navigation.transfers', path: '/inventory/transfers', icon: 'fas fa-exchange-alt' },
+      { id: 'inventory-reports', title: 'التقارير', path: '/inventory/reports', icon: 'fas fa-chart-bar' }
     ]
   },
   {
@@ -51,7 +54,8 @@ export const menuConfig = [
       { id: 'accounting', title: 'navigation.accounting', path: '/finance/accounting', icon: 'fas fa-calculator' },
       { id: 'accounts', title: 'navigation.accounts', path: '/finance/accounts', icon: 'fas fa-list' },
       { id: 'receipts', title: 'navigation.receipts', path: '/finance/receipts', icon: 'fas fa-receipt' },
-      { id: 'transactions', title: 'navigation.transactions', path: '/finance/transactions', icon: 'fas fa-exchange-alt' }
+      { id: 'transactions', title: 'navigation.transactions', path: '/finance/transactions', icon: 'fas fa-exchange-alt' },
+      { id: 'finance-reports', title: 'التقارير', path: '/finance/reports', icon: 'fas fa-chart-bar' }
     ]
   },
   {
@@ -65,7 +69,8 @@ export const menuConfig = [
       { id: 'employees', title: 'navigation.employees', path: '/hr/employees', icon: 'fas fa-user-tie' },
       { id: 'attendance', title: 'navigation.attendance', path: '/hr/attendance', icon: 'fas fa-clock' },
       { id: 'payroll', title: 'navigation.payroll', path: '/hr/payroll', icon: 'fas fa-money-check-alt' },
-      { id: 'leaves', title: 'navigation.leaves', path: '/hr/leaves', icon: 'fas fa-calendar-times' }
+      { id: 'leaves', title: 'navigation.leaves', path: '/hr/leaves', icon: 'fas fa-calendar-times' },
+      { id: 'hr-reports', title: 'التقارير', path: '/hr/reports', icon: 'fas fa-chart-bar' }
     ]
   },
   {
@@ -75,7 +80,8 @@ export const menuConfig = [
     path: '/crm',
     children: [
       { id: 'crm-overview', title: 'navigation.overview', path: '/crm', icon: 'fas fa-tachometer-alt' },
-      { id: 'crm-management', title: 'navigation.crmManagement', path: '/crm/management', icon: 'fas fa-chart-bar' }
+      { id: 'crm-management', title: 'navigation.crmManagement', path: '/crm/management', icon: 'fas fa-chart-bar' },
+      { id: 'crm-reports', title: 'التقارير', path: '/crm/reports', icon: 'fas fa-chart-bar' }
     ]
   },
   {
@@ -89,7 +95,7 @@ export const menuConfig = [
       { id: 'pos-sales', title: 'navigation.sales', path: '/pos/sales', icon: 'fas fa-shopping-cart' },
       { id: 'pos-products', title: 'navigation.products', path: '/pos/products', icon: 'fas fa-box' },
       { id: 'pos-customers', title: 'navigation.customers', path: '/pos/customers', icon: 'fas fa-users' },
-      { id: 'pos-reports', title: 'navigation.reports', path: '/pos/reports', icon: 'fas fa-chart-bar' }
+      { id: 'pos-reports', title: 'التقارير', path: '/pos/reports', icon: 'fas fa-chart-bar' }
     ]
   },
   {
@@ -99,7 +105,8 @@ export const menuConfig = [
     path: '/ecommerce',
     children: [
       { id: 'ecommerce-overview', title: 'navigation.overview', path: '/ecommerce', icon: 'fas fa-tachometer-alt' },
-      { id: 'ecommerce-management', title: 'navigation.ecommerceManagement', path: '/ecommerce/management', icon: 'fas fa-chart-bar' }
+      { id: 'ecommerce-management', title: 'navigation.ecommerceManagement', path: '/ecommerce/management', icon: 'fas fa-chart-bar' },
+      { id: 'ecommerce-reports', title: 'التقارير', path: '/ecommerce/reports', icon: 'fas fa-chart-bar' }
     ]
   },
   {
@@ -109,7 +116,8 @@ export const menuConfig = [
     path: '/projects',
     children: [
       { id: 'projects-overview', title: 'navigation.overview', path: '/projects', icon: 'fas fa-tachometer-alt' },
-      { id: 'projects-management', title: 'navigation.projectsManagement', path: '/projects/management', icon: 'fas fa-chart-bar' }
+      { id: 'projects-management', title: 'navigation.projectsManagement', path: '/projects/management', icon: 'fas fa-chart-bar' },
+      { id: 'projects-reports', title: 'التقارير', path: '/projects/reports', icon: 'fas fa-chart-bar' }
     ]
   },
   {
@@ -127,19 +135,6 @@ export const menuConfig = [
       { id: 'tenants-overview', title: 'navigation.overview', path: '/tenants', icon: 'fas fa-tachometer-alt' },
       { id: 'tenants-list', title: 'navigation.tenantsList', path: '/tenants/list', icon: 'fas fa-list' },
       { id: 'subscription-plans', title: 'navigation.subscriptionPlans', path: '/tenants/plans', icon: 'fas fa-credit-card' }
-    ]
-  },
-  {
-    id: 'rbac',
-    title: 'navigation.rbac',
-    icon: 'fas fa-users-cog',
-    path: '/rbac',
-    children: [
-      { id: 'rbac-overview', title: 'navigation.overview', path: '/rbac', icon: 'fas fa-tachometer-alt' },
-      { id: 'rbac-users', title: 'navigation.users', path: '/rbac/users', icon: 'fas fa-users' },
-      { id: 'rbac-roles', title: 'navigation.roles', path: '/rbac/roles', icon: 'fas fa-user-tag' },
-      { id: 'rbac-permissions', title: 'navigation.permissions', path: '/rbac/permissions', icon: 'fas fa-shield-alt' },
-      { id: 'rbac-assignments', title: 'navigation.assignments', path: '/rbac/assignments', icon: 'fas fa-user-check' }
     ]
   },
   {

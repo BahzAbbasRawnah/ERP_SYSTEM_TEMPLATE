@@ -931,10 +931,14 @@
       "createTitle": "Create New Tenant",
       "tabs": {
         "basic": "Basic Info",
-        "owner": "Owner Details",
         "subscription": "Subscription",
-        "database": "Database",
-        "domain": "Domain"
+        "technical": "Technical Configuration"
+      },
+      "sections": {
+        "tenantInfo": "Tenant Information",
+        "ownerInfo": "Owner Information",
+        "databaseConfig": "Database Configuration",
+        "domainConfig": "Domain Configuration"
       },
       "fields": {
         "name": "Tenant Name",

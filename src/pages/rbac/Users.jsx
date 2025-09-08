@@ -32,7 +32,7 @@ const Users = () => {
       key: 'name',
       header: t('common.name'),
       sortable: true,
-      render: (value, row) => (
+      render: (value) => (
         <div className="flex items-center space-x-3">
           <div className="w-8 h-8 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center">
             <span className="text-blue-600 dark:text-blue-400 font-semibold text-sm">

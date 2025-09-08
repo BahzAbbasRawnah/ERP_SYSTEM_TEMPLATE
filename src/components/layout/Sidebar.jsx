@@ -72,6 +72,10 @@ const HorizontalSidebar = () => {
       items: menuConfig.filter(item => ['purchases', 'finance', 'hr'].includes(item.id))
     },
     {
+      title: 'Reports',
+      items: menuConfig.filter(item => ['sales-reports', 'purchases-reports', 'finance-reports', 'hr-reports', 'inventory-reports', 'pos-reports', 'projects-reports', 'crm-reports', 'ecommerce-reports'].includes(item.id))
+    },
+    {
       title: 'Tools',
       items: menuConfig.filter(item => ['pos', 'ecommerce', 'projects', 'logistics'].includes(item.id))
     },
@@ -229,6 +233,10 @@ const SlimSidebar = () => {
     {
       title: 'Management',
       items: menuConfig.filter(item => ['purchases', 'finance', 'hr'].includes(item.id))
+    },
+    {
+      title: 'Reports',
+      items: menuConfig.filter(item => ['sales-reports', 'purchases-reports', 'finance-reports', 'hr-reports', 'inventory-reports', 'pos-reports', 'projects-reports', 'crm-reports', 'ecommerce-reports'].includes(item.id))
     },
     {
       title: 'Tools',
@@ -419,6 +427,10 @@ const StaticSidebar = () => {
     {
       title: 'Management',
       items: menuConfig.filter(item => ['purchases', 'finance', 'hr'].includes(item.id))
+    },
+    {
+      title: 'Reports',
+      items: menuConfig.filter(item => ['sales-reports', 'purchases-reports', 'finance-reports', 'hr-reports', 'inventory-reports', 'pos-reports', 'projects-reports', 'crm-reports', 'ecommerce-reports'].includes(item.id))
     },
     {
       title: 'Tools',

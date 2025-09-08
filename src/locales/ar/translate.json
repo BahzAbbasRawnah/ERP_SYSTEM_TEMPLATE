@@ -115,7 +115,11 @@
     "assignments": "التعيينات",
     "tenants": "المنشآت",
     "tenantsList": "قائمة المنشآت",
-    "subscriptionPlans": "خطط الاشتراك"
+    "subscriptionPlans": "خطط الاشتراك",
+    "sales-reports": "تقارير المبيعات",
+    "purchases-reports": "تقارير المشتريات",
+    "crm-reports": "تقارير العملاء",
+    "ecommerce-reports": "تقارير التجارة الإلكترونية"
   },
   "tenants": {
     "management": {
